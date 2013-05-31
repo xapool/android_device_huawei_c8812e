@@ -1,0 +1,2 @@
+add_lunch_combo cm_c8812e-userdebug
+add_lunch_combo cm_c8812e-eng

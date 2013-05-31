@@ -1,0 +1,172 @@
+#
+# system.prop for c8812e
+#
+#ro.vendor.extension_library=/system/lib/libqc-opt.so
+rild.libpath=/system/lib/libril-qc-1.so
+rild.libargs=-d /dev/smd0
+ro.cdma.home.operator.numeric=46003
+ro.telephony.default_network=4
+ro.config.cdma_subscription=0
+ro.cdma.factory=china
+ril.subscription.types=NV,RUIM
+#ro.config.cdma.globalModeSingle=true
+DEVICE_PROVISIONED=1
+debug.sf.hw=1
+ro.sf.lcd_density=240
+ro.opengles.version=131072
+
+# Telephony OO7
+ro.telephony.ril_class=HuaweiQualcommRIL
+
+# Audio
+headset.hook.delay=500
+
+wifi.interface=eth0
+wifi.supplicant_scan_interval=15
+
+#debug.camcorder.disablemeta=1
+
+# USB Mount
+ro.additionalmounts=/storage/sdcard1
+ro.vold.switchablepair=/storage/sdcard1,/storage/sdcard0
+ro.emmc.sdcard.partition=19
+persist.sys.usb.config=mass_storage,adb
+ro.vold.umsdirtyratio=50
+
+persist.sys.use_dithering=2
+com.qc.hardware=true
+gfx.highend_override=yes
+
+#ro.telephony.call_ring.delay=3000
+
+# af controller enable switcher
+ro.config.camera.afctl.enable=true
+
+keyguard.no_require_sim=true
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+ro.config.hw_omacp=1
+persist.data.ds_fmc_app.mode=0
+
+#
+# system props for IMS module
+#
+persist.ims.regmanager.mode=0
+
+#
+# system prop for requesting Master role in incoming Bluetooth connection.
+#
+ro.bluetooth.request.master=true
+
+#
+# system prop for Bluetooth FTP profile
+#
+ro.qualcomm.bluetooth.ftp=true
+
+#
+# system prop for Bluetooth SAP profile
+#
+ro.qualcomm.bluetooth.sap=true
+
+#
+# system prop for Bluetooth Auto connect for remote initated connections
+#
+ro.bluetooth.remote.autoconnect=true
+
+#
+#system property for Bluetooth discoverability timeout in seconds
+#0: Always discoverable
+debug.bt.discoverable_time=-1
+
+#System prop to enable ehrpd capability
+ro.config.ehrpd=true
+
+# System property for cabl
+ro.qualcomm.cabl=1
+
+#
+#System prop to determine availability of
+#analog fm path
+#
+ro.fm.analogpath.supported=true
+
+#
+#System property for FM transmitter
+#
+ro.fm.transmitter=false
+
+#
+#System property for single instance recording
+#
+ro.fm.mulinst.recording.support=false
+ro.config.keypasstouser=true
+#System property for msm 
+#
+
+
+# MSM8x25
+debug.composition.8x25.type=mdp
+ro.hw_plat=8x25
+
+#OO7
+dev.pm.dyn_sample_period=700000
+dev.pm.dyn_samplingrate=1 
+
+# libandroid_runtime
+ro.config.hw_pic_limit_size=50
+
+# libwebcore
+ro.config.usesEncodingDetector =1
+net.webkit.setpri = 1
+net.webkit.cache.mindeadsize = 4194304
+net.webkit.cache.maxdeadsize = 4194304
+
+# netmgrd
+persist.data_netmgrd_mtu=1460
+
+# modempre
+ro.config.is_cdma_phone=true
+ro.config.sel_df_c_before_tp=true
+ro.config.notRefreshInPBM=true
+
+#mod by OO7
+#debug.composition.type=dyn
+debug.composition.type=mdp
+debug.enabletr=true
+
+# mm-pp-daemon
+hw.cabl.level=2
+hw.cabl.version=1.0.20120512
+ro.qualcomm.cabl=1
+
+# init.qcom.composition_type.sh
+lpa.decode=false
+
+# libc
+net.dns.cache_size=512
+
+# libgetzip
+net.http.getzip=1
+
+# libtcpfinaggr
+net.tcp.fin.aggregation = 1
+
+# gps_check
+ro.config.is_agps_disable=0
+
+# libril-qc-1.so
+ro.config.hw_cdma_cdg=false
+
+# VM
+dalvik.vm.dexopt-data-only=1
+dalvik.vm.execution-mode=int:jit
+dalvik.vm.heapgrowthlimit=36m
+dalvik.vm.heapsize=128m
+dalvik.vm.heapstartsize=5m
+
+ro.confg.hw_appsbootversion=C8812EVSHENDUOS_APPSBOOT
+ro.confg.hw_appversion=C8812EVSHENDUOS_KERNEL
+ro.confg.hw_appfsversion=C8812EVSHENDUOS_SYSIMG

@@ -1,0 +1,16 @@
+    device/huawei/c8812e/prebuilt/system/lib/libOpenVG.so:system/lib/libOpenVG.so \
+    device/huawei/c8812e/prebuilt/system/lib/libgsl.so:system/lib/libgsl.so \
+    device/huawei/c8812e/prebuilt/system/lib/libsc-a2xx.so:system/lib/libsc-a2xx.so
+PRODUCT_COPY_FILES += \
+    device/huawei/c8812e/prebuilt/system/lib/hw/gralloc.msm7x27a.so:system/lib/hw/gralloc.msm7x27a.so \
+    device/huawei/c8812e/prebuilt/system/lib/hw/hwcomposer.msm7x27a.so:system/lib/hw/hwcomposer.msm7x27a.so \
+    device/huawei/c8812e/prebuilt/system/lib/hw/copybit.msm7x27a.so:system/lib/hw/copybit.msm7x27a.so \
+    device/huawei/c8812e/prebuilt/system/lib/libgenlock.so:system/lib/libgenlock.so \
+    device/huawei/c8812e/prebuilt/system/lib/libmemalloc.so:system/lib/libmemalloc.so \
+    device/huawei/c8812e/prebuilt/system/lib/liboverlay.so:system/lib/liboverlay.so \
+    device/huawei/c8812e/prebuilt/system/lib/libqdutils.so:system/lib/libqdutils.so \
+    device/huawei/c8812e/prebuilt/system/lib/libhwcexternal.so:system/lib/libhwcexternal.so \
+    device/huawei/c8812e/prebuilt/system/lib/libhwcservice.so:system/lib/libhwcservice.so
+
+
+文件从C8812E_B949_010813_HackerOO7_v4.zip提取
