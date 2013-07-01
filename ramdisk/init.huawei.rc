@@ -643,14 +643,14 @@ service rendering-set /system/bin/sh /system/etc/init.qcom.rendering.sh
 
 #start camera server as daemon
 service qcamerasvr /system/bin/mm-qcamera-daemon
-        class late_start
-        user camera
-        group camera system inet audio
+    class late_start
+    user media
+    group camera system inet audio
 
 service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
-	class main
-	user root
-	oneshot
+    class main
+    user root
+    oneshot
 
 on property:sys.radio.shutdown=true
     exec /system/bin/sh /system/etc/init.qcom.efs.sync.sh
