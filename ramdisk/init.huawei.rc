@@ -630,7 +630,7 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     user media
     group camera system inet audio
 
-service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
+service mpdecision /system/bin/mpdecision --Nw 5.4 --Ts 350 --no_sleep --avg_comp --single_core_while_panel_off
     class main
     user root
     oneshot
