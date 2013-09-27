@@ -313,10 +313,8 @@ on property:bluetooth.isEnabled=true
 on property:bluetooth.isEnabled=false
     start amp_unload
     
-service rmt_storage /system/bin/rmt_storage
-    class main
-    user root
-    disabled
+service rmt_storage /system/bin/rmt_storage /dev/block/mmcblk0p9 /dev/block/mmcblk0p10 /dev/block/mmcblk0p14
+    class core
 
 service hwdevctl /system/bin/hwdevctlservice
     class main
@@ -515,11 +513,9 @@ service akm8963 /system/bin/akmd8963
     oneshot
 
 service rmt_oeminfo /system/bin/rmt_oeminfo
-    class main
-    user root
-    oneshot
+    class core
 
-on property:ro.emmc=1
+on property:ro.boot.emmc=true
     start rmt_oeminfo
     start rmt_storage
 
