@@ -27,10 +27,10 @@ wifi.supplicant_scan_interval=15
 #debug.camcorder.disablemeta=1
 
 # USB Mount
+persist.sys.usb.config=mtp,adb
 ro.additionalmounts=/storage/sdcard1
 ro.vold.switchablepair=/storage/sdcard1,/storage/sdcard0
 ro.emmc.sdcard.partition=19
-persist.sys.usb.config=mass_storage,adb
 ro.vold.umsdirtyratio=50
 
 persist.sys.use_dithering=2
