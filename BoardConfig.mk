@@ -115,8 +115,7 @@ WIFI_TEST_INTERFACE := "sta"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_P2P := "p2p"
-# maybe just for BCM ?? compile error
-#BOARD_LEGACY_NL80211_STA_EVENTS := true
+BOARD_HAVE_HUAWEI_WIFI := true
 
 ##try to fix Wi-Fi tethering
 # Wi-Fi Hotspot,just for ics
