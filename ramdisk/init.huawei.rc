@@ -1,12 +1,8 @@
 import init.huawei.usb.rc
 
 on early-boot
-    start comp-set
-    start rendering-set
     start qcamerasvr
     start gpu_dcvsd
-    start qcom-post-boot
-    #start hostapd
 
 on init
     mkdir /storage 0775 system sdcard_r
@@ -494,12 +490,15 @@ on property:drmdiag.load=1
 
 on property:drmdiag.load=0
     stop drmdiag
-
+  
 service qcom-post-boot /system/bin/sh /system/etc/init.qcom.post_boot.sh
-    class late_start
+    class main
     user root
     disabled
     oneshot
+    
+on property:sys.boot_completed=1
+    start qcom-post-boot 
 
 service qcom-wifi /system/bin/sh /system/etc/init.qcom.wifi.sh
     class late_start
